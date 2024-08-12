@@ -26,7 +26,10 @@ export default {
 .pesquisa {
   display: flex;
   align-items: center;
+  justify-content: end;
+  margin-right: 15px;
 }
+
 .navInput {
   padding: 10px;
   width: 25vw;

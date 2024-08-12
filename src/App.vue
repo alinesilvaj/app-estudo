@@ -1,8 +1,6 @@
 <script>
-import MenuApp from './components/MenuApp.vue'
 import SearchTask from './components/SearchTask.vue'
 import SearchTaskCategory from './components/SearchTaskCategory.vue'
-import IconSearch from './components/IconSearch.vue'
 import TitleApp from './components/TitleApp.vue'
 import TitleCategories from './components/TitleCategories.vue'
 import CategoriesApp from './components/CategoriesApp.vue'
@@ -19,10 +17,8 @@ import ButtonNewTask from './components/ButtonNewTask.vue'
 
 export default {
   components: {
-    MenuApp,
     SearchTask,
     SearchTaskCategory,
-    IconSearch,
     TitleApp,
     TitleCategories,
     CategoriesApp,
@@ -88,7 +84,9 @@ export default {
       })
 
       valores = valores.filter((task) => {
-        if (this.selected === null) { return task }
+        if (this.selected === null) {
+          return task
+        }
         return task.checkBusiness === this.selected
       })
 
@@ -142,9 +140,7 @@ export default {
 
 <template>
   <div :class="{ pageTasksList: pageTasksList }">
-    <nav class="menu">
-      <MenuApp />
-
+    <nav>
       <div class="pesquisa">
         <SearchTask v-model="searchTask" />
 
@@ -158,8 +154,6 @@ export default {
             />
           </select>
         </div>
-
-        <IconSearch @click="showSearchBar" />
       </div>
     </nav>
 
