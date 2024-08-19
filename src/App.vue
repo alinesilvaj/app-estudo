@@ -70,10 +70,17 @@ export default {
   }),
   computed: {
     computedCards() {
+      if (this.tasks.length == 0) {
+        return this.cards.map((card) => ({
+          ...card,
+          title: this.getTasksByCard(card).length,
+          progress: 0
+        }))
+      }
       return this.cards.map((card) => ({
         ...card,
         title: this.getTasksByCard(card).length,
-        progress: (this.getTasksByCard(card).length * 100) / this.tasks.length
+        progress: this.getTasksByCard(card).length * 100 / this.tasks.length
       }))
     },
     tasksFiltered() {
