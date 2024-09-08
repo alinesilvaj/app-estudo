@@ -1,2 +1,4 @@
 # app-estudo
- To do list project using Vue.js
+ I developed a to do list in which you must select the category it fits into, personal or business, with each category having a color. As tasks are added, the bars for each category will increase or decrease in size. For example, if I have 2 tasks, 1 in the personal category and 1 in the business category, 50% of each bar will be filled. In addition, it is also possible to mark the task as completed and delete it. In the page menu, there is a search bar to find tasks that have already been added, in case your list is large.
+
+ Desenvolvi uma lista de tarefas em que você deve selecionar a categoria na qual ela se encaixa, pessoal ou negócios, tendo cada categoria uma cor. A medida que as tarefas são adicionadas, as barras referente a cada categoria vão aumentando ou diminuindo de tamanho, por exemplo, se tenho 2 tarefas sendo 1 da categoria pessoal e 1 da categoria negócios, 50% de cada barra estará preenchida. Além disso também é póssivel marcar a tarefa com concluída e excluí-la. No menu da página há uma barra de pesquisa para encontrar tarefas já adicionadas, caso sua lista esteja grande.
